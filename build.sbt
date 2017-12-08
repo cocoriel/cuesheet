@@ -2,11 +2,11 @@ import scala.xml.transform.{RewriteRule, RuleTransformer}
 import scala.xml.{Comment, Elem, Node => XmlNode, NodeSeq => XmlNodeSeq}
 import UpdateReadme._
 
-val sparkVersion = "2.2.0"
+val sparkVersion = "2.1.0"
 
-val hadoopVersion = "2.7.3"
+val hadoopVersion = "2.6.0"
 
-val hbaseVersion = "1.3.0"
+val hbaseVersion = "1.2.0"
 
 val hadoopDependencies = Seq("client", "yarn-api", "yarn-common", "yarn-server-web-proxy", "yarn-client")
 
