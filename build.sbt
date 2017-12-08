@@ -29,7 +29,7 @@ val hbaseDependencies = Seq("server", "common").map {
 val jdkVersionCheck = taskKey[Unit]("Check JDK version")
 
 jdkVersionCheck := {
-  val required = "1.7"
+  val required = "1.8"
   val current  = sys.props("java.specification.version")
   assert(current == required || sys.env.contains("TRAVIS"), s"JDK $required is required for compatibility; current version = $current")
 }
